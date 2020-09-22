@@ -5,7 +5,6 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.2",
-        "drupal/console": "1.9.3",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
@@ -18,24 +17,7 @@
     "config": {
         "sort-packages": true
     },
-    "scripts": {
-        "post-install-cmd": [
-            "rm -rf web/libraries/dropzone/test",
-            "@install-git-hooks",
-            "@install-phpcs"
-        ],
-        "post-update-cmd": [
-            "rm -rf web/libraries/dropzone/test",
-            "@install-git-hooks",
-            "@install-phpcs"
-        ],
-        "install-git-hooks": [
-            "./scripts/install-git-hooks.sh"
-        ],
-        "install-phpcs": [
-            "./vendor/bin/phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer"
-        ]
-    },
+    "scripts": {},
     "extra": {
         "enable-patching": true,
         "patchLevel": {
