@@ -23,6 +23,6 @@ There are two ways to pull and apply the latest changes:
 #### Troubleshooting
 1. Make sure the composer has been installed on your local machine, otherwise you need to install
 the [composer](https://getcomposer.org/) before site installation
-1. Please make sure you don't have the following files in the config directory before importing configs via Drush:
+2. Please make sure you don't have the following files in the config directory before importing configs via Drush:
  * core.extension.yml
  * system.site.yml
