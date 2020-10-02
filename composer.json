@@ -9,7 +9,7 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drush/drush": "^10",
-        "linnovate/openideal": "^3.0",
+        "linnovate/openideal": "^3",
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "minimum-stability": "dev",
