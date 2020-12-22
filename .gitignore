@@ -60,3 +60,5 @@
 
 # MacOS specific stuff.
 .DS_Store
+
+/composer.lock
