@@ -5,6 +5,8 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.2",
+        "drupal/ajax_comments": "1.x-dev#4b0c423",
+        "drupal/ckeditor_mentions": "2.x-dev#272a28e7",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
