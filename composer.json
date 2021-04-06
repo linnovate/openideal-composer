@@ -13,7 +13,7 @@
         "drupal/rules": "3.x-dev#7d1833f",
         "drush/drush": "^10",
         "linnovate/openideal": "dev-3.x-dev",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -51,7 +51,6 @@
         }
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
         "drupal/coder": "^8.3"
     },
     "repositories": [
