@@ -10,9 +10,9 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
-        "drupal/rules": "3.x-dev#7d1833f",
+        "drupal/rules": "^3.0@alpha",
         "drush/drush": "^10",
-        "linnovate/openideal": "^3.0",
+        "linnovate/openideal": "^3.x",
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "minimum-stability": "dev",
