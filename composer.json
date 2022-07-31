@@ -14,6 +14,7 @@
         "drupal/rules": "^3.0@alpha",
         "drush/drush": "^10",
         "linnovate/openideal": "^3.0",
+        "nlib/lib-curl": "dev-master",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "minimum-stability": "dev",
