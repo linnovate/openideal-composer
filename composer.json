@@ -4,17 +4,13 @@
     "type": "project",
     "license": "GPL-2.0-or-later",
     "require": {
-        "composer/installers": "^1.2",
+        "composer/installers": "^1.9",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-        "drupal/ajax_comments": "1.0-beta4",
-        "drupal/ckeditor_mentions": "2.x-dev#272a28e7",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8",
-        "drupal/rules": "^3.0@alpha",
+        "drupal/config_profile": "^1.0",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
         "drush/drush": "^10",
-        "linnovate/openideal": "^3.0",
-        "nlib/lib-curl": "dev-master",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "minimum-stability": "dev",
@@ -22,13 +18,13 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "wikimedia/composer-merge-plugin": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "scripts": {},
@@ -45,7 +41,6 @@
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/emojione": ["ckeditor/emojione"],
             "web/libraries/ckeditor/plugins/{$name}": ["vendor:ckeditor"],
             "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
@@ -59,11 +54,15 @@
             "include": [
                 "web/profiles/contrib/idea/composer.json"
             ],
+            "include": [
+                "web/profiles/custom/idea/composer.json"
+            ],
             "merge-extra": true
         }
     },
     "require-dev": {
-        "drupal/coder": "^8.3"
+        "drupal/coder": "^8.3",
+        "drupal/upgrade_status": "^3.18"
     },
     "repositories": [
         {
@@ -255,16 +254,8 @@
             }
         },
         {
-            "type": "package",
-            "package": {
-                "name": "ckeditor/emojione",
-                "version": "1.0.2",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://download.ckeditor.com/emojione/releases/emojione_1.0.2.zip",
-                    "type": "zip"
-                }
-            }
+            "type": "path",
+            "url": "web/profiles/custom/idea"
         }
     ]
 }
