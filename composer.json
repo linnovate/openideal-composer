@@ -59,8 +59,7 @@
         }
     },
     "require-dev": {
-        "drupal/coder": "^8.3",
-        "drupal/upgrade_status": "^3.18"
+        "drupal/coder": "^8.3"
     },
     "repositories": [
         {
@@ -250,10 +249,6 @@
                     "type": "zip"
                 }
             }
-        },
-        {
-            "type": "path",
-            "url": "web/profiles/contrib/idea"
         }
     ]
 }
