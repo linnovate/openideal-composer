@@ -249,6 +249,18 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/emojione",
+                "version": "1.0.2",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://download.ckeditor.com/emojione/releases/emojione_1.0.2.zip",
+                    "type": "zip"
+                }
+            }
         }
     ]
 }
