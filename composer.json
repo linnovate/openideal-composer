@@ -11,7 +11,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drush/drush": "^10",
-        "linnovate/openideal": "^4.0",
+        "linnovate/openideal": "*",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "minimum-stability": "dev",
@@ -42,6 +42,7 @@
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
+            "web/libraries/emojione": ["ckeditor/emojione"],
             "web/libraries/ckeditor/plugins/{$name}": ["vendor:ckeditor"],
             "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
@@ -69,6 +70,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "path",
+            "url": "web/profiles/contrib/idea"
         },
         {
             "type": "package",
