@@ -7,7 +7,7 @@
         "composer/installers": "^1.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "drupal/ajax_comments": "1.0-beta4",
-        "drupal/ckeditor_mentions": "2.x-dev#272a28e7",
+        "drupal/ckeditor_mentions": "2.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
